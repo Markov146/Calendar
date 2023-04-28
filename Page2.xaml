@@ -1,0 +1,35 @@
+﻿<Page x:Class="Calendary.Page2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Calendary"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page2">
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="114*"/>
+            <ColumnDefinition Width="229*"/>
+            <ColumnDefinition Width="114*"/>
+            <ColumnDefinition Width="228*"/>
+            <ColumnDefinition Width="114*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button x:Name="BackMain" Content="Назад" ToolTip="Icon"  Grid.Column="0" Grid.Row="0" Click="ToMainPage_Click" Margin="0,12,0,12"/>
+        <ListBox x:Name="Eat" ScrollViewer.CanContentScroll="False" Grid.Row="1" Grid.ColumnSpan="5" Grid.RowSpan="7" Margin="0,56,0,56" />
+        <TextBlock Name="Question" Grid.ColumnSpan="5" Grid.Row="0" Text="Что вы сегодня кушали?" VerticalAlignment="Center" TextAlignment="Center" FontSize="16" FontFamily="Arial" Margin="114,0,114,0" />
+        <Button x:Name="SaveExit" Content="Сохранить и выйти" Grid.Column="0" Grid.ColumnSpan="5" Grid.Row="7" Click="SaveExit_Click" VerticalAlignment="Center"/>
+        <Frame x:Name="FramePage" Grid.ColumnSpan="5" Grid.RowSpan="8"/>
+    </Grid>
+
+</Page>
